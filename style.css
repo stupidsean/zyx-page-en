@@ -141,6 +141,10 @@ div {
   overflow: hidden;
 }
 
+.content-section .tc-link-list {
+  margin: 0 1em 1em;
+}
+
 .tc-link-list li {
   float: left;
   list-style: none;
