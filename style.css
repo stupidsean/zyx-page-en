@@ -1,0 +1,166 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: #2390ff;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  margin: 0 60px;
+}
+
+.header {
+  margin: 0 -60px;
+  padding: 60px 60px 0;
+  overflow: hidden;
+  background-image: 
+  linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.5) 48%, rgba(62, 141, 238, .95) 48%, rgba(62, 141, 238, 1) 100%),
+  url('./images/circuit-board.svg');
+}
+
+.lang-switch {
+  float: left;
+  color: #fff;
+  font-size: 20px;
+}
+
+.header-photo {
+  width: 240px;
+  height: 360px;
+  margin: 0 120px;
+  float: left;
+}
+
+.header-description {
+  float: left;
+}
+
+.header-description-name {
+  font-size: 60px;
+  margin: 50px 0;
+}
+
+.header-description-title {
+  line-height: 1.2em;
+  font-size: 20px;
+  margin: 15px 0;
+  color: #fff;
+}
+
+.header-description-address {
+  line-height: 1.2em;
+  margin: 15px 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-nav {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content-nav li {
+  font-weight: bold;
+  width: 14%;
+  float: left;
+  font-size: 18px;
+  text-align: center;
+}
+
+.content-nav li.first-child {
+  margin-left: 1%;
+}
+
+.content-nav li.first-child {
+  margin-right: 1%;
+}
+
+.content-section {
+}
+
+.content-section-title {
+  font-size: 28px;
+  border-left: 16px solid #3e8ddd;
+  padding: 16px;
+}
+
+.content-section p,
+.content-section table,
+.content-section ul {
+  margin: 1em;
+  text-align: justify;
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.content-section ul {
+  list-style-type: disc;
+}
+
+.content-section td {
+  height: 30px;
+  width: 150px;
+}
+.content-section li {
+  margin-top: 0.5em;
+}
+.content-section-sub-title {
+  font-size: 20px;
+  margin: 16px;
+}
+
+.content-section .important {
+  font-weight: bold;
+  color: red;
+}
+
+.tc-item-title {
+  font-weight: bold;
+}
+
+.tc-link-list {
+  overflow: hidden;
+}
+
+.tc-link-list li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+}
+
+#top-arrow {
+  cursor: pointer;
+  color: #fff;
+  font-size: 60px;
+  line-height: 60px;
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  width: 60px;
+  height: 60px;
+  background: rgba(62,141,238,0.8);
+  visibility: hidden;
+}
+
+#top-arrow.show {
+  visibility: visible;
+}
