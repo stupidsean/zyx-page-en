@@ -29,6 +29,10 @@ div {
   url('./images/circuit-board.svg');
 }
 
+.email {
+  color: #fff;
+}
+
 .lang-switch {
   float: left;
   color: #fff;
