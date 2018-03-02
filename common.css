@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: #2390ff;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content {
+  width: 100%;
+}
+
+.content-section-title {
+  font-size: 28px;
+  border-left: 16px solid #3e8ddd;
+  padding: 16px;
+}
+
+.content-section-sub-title {
+  font-size: 20px;
+  margin: 16px;
+}
+
+.content-section .important {
+  font-weight: bold;
+  color: red;
+}
+
+#top-arrow {
+  cursor: pointer;
+  color: #fff;
+  font-size: 60px;
+  line-height: 60px;
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  width: 60px;
+  height: 60px;
+  background: rgba(62,141,238,0.8);
+  visibility: hidden;
+}
+
+#top-arrow.show {
+  visibility: visible;
+}
