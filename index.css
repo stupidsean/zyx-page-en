@@ -1,35 +1,41 @@
 .header {
-  padding: 60px 60px 0;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  /* padding: 60px 60px 0; */
   overflow: hidden;
-  background-image: 
-  linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.5) 48%, rgba(62, 141, 238, .95) 48%, rgba(62, 141, 238, 1) 100%),
-  url('./images/circuit-board.svg');
+  background-image: linear-gradient(#fff 0, #fff 70px, #4d6d9a 70px);
+  background-repeat: no-repeat;
+  background-position: 0 100px;
+  align-items: flex-end;
+}
+
+.main > .header {
+  /* max-width: initial; */
 }
 
 .email {
   color: #fff;
 }
 
-.lang-switch {
-  float: left;
-  color: #fff;
-  font-size: 20px;
-}
-
 .header-photo {
+  flex: none;
   width: 240px;
   height: 360px;
-  margin: 0 120px;
-  float: left;
+  margin: 0 60px 10px;
+  border-radius: 0 0 50% 50%;
+  border: 10px solid #fff;
 }
 
 .header-description {
-  float: left;
+  flex: none;
+  display: flex;
+  flex-flow: column;
 }
 
 .header-description-name {
   font-size: 60px;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .header-description-title {
@@ -46,26 +52,50 @@
   color: #fff;
 }
 
-.content-nav {
-  margin: 30px 0;
+.main .nav-wrapper {
+  max-width: initial;
+  /* background: #5c307d; */
+  padding: 0;
+  background: #4d6d9a;
+  position: fixed;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
+}
+
+.nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   overflow: hidden;
 }
 
-.content-nav li {
+.nav li {
   font-weight: bold;
-  width: 14%;
   float: left;
   font-size: 18px;
+  line-height: 60px;
   text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
-.content-nav li.first-child {
+.nav li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: #fff;
+}
+
+.nav li.first-child {
   margin-left: 1%;
 }
 
-.content-nav li.first-child {
+.nav li.first-child {
   margin-right: 1%;
 }
 

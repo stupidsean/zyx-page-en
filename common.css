@@ -2,13 +2,14 @@ body {
   font-family: sans-serif;
 }
 
-a {
-  color: #2390ff;
+.content a {
+  color: #4d6d9a;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
   text-decoration: none;
 }
 
-a:hover, a:active {
-  text-decoration: underline;
+.content a:hover {
+  color: #5d7daa;
 }
 
 div {
@@ -17,7 +18,15 @@ div {
 
 .main {
   position: relative;
-  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0;
+}
+
+.main > div {
+  padding: 0 60px;
+  width: 100%;
   max-width: 1200px;
 }
 
@@ -27,8 +36,12 @@ div {
 
 .content-section-title {
   font-size: 28px;
-  border-left: 16px solid #3e8ddd;
+  /* border-bottom: 5px solid #3e8ddd; */
+  border-bottom: 5px solid #4d6d9a;
   padding: 16px;
+  text-shadow: 1px 4px 3px rgba(0,0,0,0.2),
+               0px -2px 18px rgba(255,255,255,0.3);
+
 }
 
 .content-section-sub-title {
@@ -43,18 +56,37 @@ div {
 
 #top-arrow {
   cursor: pointer;
-  color: #fff;
+  color: #4d639a;
   font-size: 60px;
   line-height: 60px;
   position: fixed;
   bottom: 60px;
-  right: 80px;
+  right: 76px;
   width: 60px;
   height: 60px;
-  background: rgba(62,141,238,0.8);
   visibility: hidden;
+  padding: 0;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 #top-arrow.show {
   visibility: visible;
+}
+
+@media screen and (min-width: 1200px) {
+  #top-arrow {
+    right: calc(50vw - 600px + 30px + 30px + 16px);
+  }
+
 }
