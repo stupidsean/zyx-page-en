@@ -1,5 +1,6 @@
 /* global $ */
 $(function() {
+  /*
   var navHeight = $('.nav-wrapper').height();
 
   var navItems = ['bio', 'tc', 'publications', 'awards', 'patents', 'others'];
@@ -11,6 +12,7 @@ $(function() {
       }, 500);
     });
   });
+  */
 
 
   $('#top-arrow').click(function() {
