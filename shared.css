@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  padding: 20px 60px 0;
+  height: 200px;
+  max-width: 1200px;
+  margin: 10px auto;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.4),
+             0px 6px 13px rgba(0,0,0,0.1),
+             0px 12px 13px rgba(0,0,0,0.1);
+}
+
+.nav li {
+  font-weight: bold;
+  float: left;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.nav li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: #fff;
+}
+
+.header .nav {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 0 70px;
+  justify-self: end;
+  justify-content: space-between;
+  display: flex;
+}
+
+.header .nav.nav-left {
+  width: 600px;
+  left: 0;
+}
+
+.header .nav.nav-right {
+  right: 20px;
+}
+
+.header .nav.nav-right a {
+  font-size: 1.5em;
+}
+
+.header:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  filter: blur(2px);
+  background:hsla(0,0%,100%,.2);
+}
+
+.main .header-wrapper {
+  max-width: 100vw;
+  position: relative;
+}
+
+.main .header-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  /* filter: blur(2px); */
+  background-image: linear-gradient(to right, rgba(77,109,154,1) 0, rgba(255,255,255,0.5) 100%), url('./images/member_header.jpg');
+  background-repeat: no-repeat;
+;
+}
+
+.header h1 {
+  font-size: 60px;
+  position: relative;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.4),
+             0px 6px 13px rgba(0,0,0,0.1),
+             0px 12px 13px rgba(0,0,0,0.1);
+}
+

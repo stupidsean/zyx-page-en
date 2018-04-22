@@ -102,15 +102,6 @@
   margin-right: 1%;
 }
 
-.content-section p,
-.content-section table,
-.content-section ul {
-  margin: 1em;
-  text-align: justify;
-  line-height: 1.2;
-  font-size: 16px;
-}
-
 .content-section ul {
   list-style-type: disc;
 }

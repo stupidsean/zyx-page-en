@@ -54,6 +54,15 @@ div {
   color: red;
 }
 
+.content-section p,
+.content-section table,
+.content-section ul {
+  margin: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
 #top-arrow {
   cursor: pointer;
   color: #4d639a;
